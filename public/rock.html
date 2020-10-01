@@ -6,43 +6,51 @@
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
   <meta charset="utf-8">
 
-  <link rel="stylesheet" href="/my_styles.css">
+  <!-- <link rel="stylesheet" href="/my_styles.css"> -->
+
+  <link rel="stylesheet" href="/bootstrap.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+ <style>
+
+ </style>
+
+
   <div class="container">
-    <div class="row mb-medium">
-      <div class="one-third">
-        <a class="button" href="/rock">
+    <div class="mt-5 row mb-3">
+      <div class="col-md-4">
+        <a class="btn btn-info btn-block" href="/rock">
           Play Rock
         </a>
       </div>
 
-      <div class="one-third">
-        <a class="button" href="/paper">
+      <div class="col-md-4">
+        <a class="btn btn-outline-info btn-block" href="/paper">
           Play Paper
         </a>
       </div>
 
-      <div class="one-third">
-        <a class="button" href="/scissors">
+      <div class="col-md-4">
+        <a class="btn btn-outline-info btn-block" href="/scissors">
           Play Scissors
         </a>
       </div>
     </div>
 
     <div class="row mb-medium">
-      <div class="one-half">
-        <div class="player-card centered">
+      <div class="col-md-6">
+        <div class="player-card text-center">
           <h2>
             <em>We</em> <strong>played</strong> <a href="https:/www.google.com">rock</a>!
           </h2>
         </div>
       </div>
 
-      <div class="one-half">
-        <div class="computer-card centered">
+      <div class="col-md-6">
+        <div class="computer-card text-center">
           <h2>
             They played paper!
           </h2>
@@ -50,18 +58,20 @@
       </div>
     </div>
 
-    <div class="row-center mb-medium">
-      <div class="two-thirds">
-        <div class="outcome-card centered">
+    <div class="row mb-medium">
+      <div class="offset-md-2 col-md-8">
+        <div class="outcome-card text-center">
           <h2>
+           <div class="alert alert-danger" role="alert">
             We lost!
+          </div>
           </h2>
         </div>
       </div>
     </div>
 
-    <div class="row-center mb-medium">
-      <div class="full-width centered">
+    <div class="row mb-medium">
+      <div class="col-md-12 text-center">
         <a href="/">
           Rules
         </a>
